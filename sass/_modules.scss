@@ -1,0 +1,10 @@
+// Modules of template-specific/widget-specific styles
+
+@import "modules/_navigation", "modules/_buttons", "modules/_forms", "modules/_panels", "modules/_breadcrumb", "modules/_media";
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}

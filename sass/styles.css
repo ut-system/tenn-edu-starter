@@ -1,0 +1,535 @@
+/* If we have web fonts, they're in this file */
+/* 	all the mixins below gives us a way of specifying measurements in a single unit, and then it puts it into both pixels and rems
+	so we've got relative units for accessibility, but absolute units for old browsers */
+/* Jonic's mixin */
+/* end px/rem mixins */
+/* This mixin provides the properties required to make :after and :before elements work as image background containers */
+/* line 9, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+html, button, input, select, textarea {
+  color: #222; }
+
+/* line 13, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+html {
+  font-size: 1em;
+  line-height: 1.4; }
+
+/* line 18, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 23, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 28, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 37, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+img, canvas, iframe, video, svg, select, textarea {
+  vertical-align: middle;
+  max-width: 100%; }
+
+/* line 42, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 48, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+textarea {
+  resize: vertical; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+body {
+  font: 16px/26px "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+
+/* line 9, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+h1, h2, h3, h4 {
+  font-family: "Gotham SSm A", "Gotham SSm B", "Gotham" "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif; }
+
+/* line 13, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+h1 {
+  font-size: 2em;
+  line-height: 1.125em; }
+
+/* line 18, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+h2 {
+  font-size: 1.625em;
+  line-height: 1.15385em; }
+
+/* line 23, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+h3 {
+  font-size: 1.375em;
+  line-height: 1.13636em; }
+
+/* line 29, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+h4 {
+  font-size: 1.125em;
+  line-height: 1.11111em; }
+
+@media (min-width: 43.75em) {
+  /* line 38, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+  h1 {
+    font-size: 2.5em;
+    line-height: 1.125em; }
+
+  /* line 43, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+  h2 {
+    font-size: 2em;
+    line-height: 1.25em; }
+
+  /* line 48, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25em; }
+
+  /* line 54, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base/_type */
+  h4 {
+    font-size: 1.125em;
+    line-height: 1.22222em; }
+ }
+
+/* line 54, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+a, a:visited {
+  color: #007AAD; }
+
+/* line 58, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/base */
+a:hover {
+  color: #0074d9; }
+
+/* line 3, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout */
+body {
+  min-width: 260px;
+  /* stops the pages getting ridiculously narrow */
+  overflow-x: hidden;
+  width: 100%; }
+
+/* line 9, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout */
+.wrapper {
+  width: 90%;
+  margin: 0% 5%; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_header */
+.header-container {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 0.8em 0px; }
+
+/* line 11, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_header */
+.title {
+  color: #222; }
+
+/* line 15, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_header */
+.logo {
+  margin-bottom: 0.8em;
+  max-width: 320px; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_footer */
+.footer-container {
+  border-top: 4px solid #f77f00;
+  border-bottom: 1px solid #000; }
+
+/* line 11, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_footer */
+.footer-container {
+  background: #404040; }
+
+/* line 16, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_footer */
+.footer-container footer {
+  color: white;
+  padding: 20px 0; }
+
+/* line 21, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_footer */
+.global-footer {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0;
+  background: #000;
+  color: #f2f2f0;
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+/* line 31, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_footer */
+.global-footer a {
+  color: #ccc;
+  text-decoration: underline; }
+
+/* line 7, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_main */
+.main-container {
+  margin-top: 2.5%; }
+
+/* line 11, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_main */
+.main {
+  background-color: #fff;
+  margin-top: 0px; }
+
+/* line 16, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_main */
+.main article {
+  padding: 30px 0; }
+
+/* line 20, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/layout/_main */
+.main aside {
+  padding: 0px 2.5% 10px; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+nav ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 12, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+.global-navigation ul {
+  margin: 0;
+  padding: 0; }
+
+/* line 17, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+.global-navigation a {
+  display: block;
+  margin-bottom: 1px;
+  padding: 11px 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  background-color: #f2f2f0; }
+
+/* line 31, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+.global-navigation a:hover, .global-navigation a:visited {
+  color: black; }
+
+/* line 35, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+.global-navigation a:hover {
+  text-decoration: underline; }
+
+/* line 43, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+.related li {
+  margin-left: 0;
+  list-style: none;
+  padding-bottom: 0.5em;
+  margin-bottom: 0.75em;
+  border-bottom: 2px dotted #ccc; }
+
+/* line 51, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_navigation */
+.related-src {
+  margin-top: 0.2em;
+  display: block;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.8em; }
+
+/* line 9, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_buttons */
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #555;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+
+/* line 36, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_buttons */
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+
+/* line 44, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_buttons */
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0; }
+
+/* line 57, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_buttons */
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, input[type="reset"].button-primary:hover, input[type="button"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus, input[type="reset"].button-primary:focus, input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB; }
+
+/* line 13, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+/* Removes awkward default styles on some inputs for iOS */
+/* line 29, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
+/* line 33, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+
+/* line 45, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="text"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0; }
+
+/* line 49, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+label, legend {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600; }
+
+/* line 53, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+fieldset {
+  padding: 0;
+  border-width: 0; }
+
+/* line 57, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+input[type="checkbox"], input[type="radio"] {
+  display: inline; }
+
+/* line 59, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_forms */
+label > .label-body {
+  display: inline-block;
+  margin-left: 0.5rem;
+  font-weight: normal; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_panels */
+.panel {
+  border: 1px solid #ccc;
+  background-color: #f2f2f0;
+  padding: 0.7em 1em;
+  color: #222;
+  margin-bottom: 1em; }
+
+/* line 13, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_panels */
+.panel-dark {
+  border: 1px solid #000;
+  background-color: #404040;
+  padding: 0.7em 1em;
+  color: white;
+  margin-bottom: 1em; }
+
+/* line 21, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_panels */
+.panel-white {
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 0.7em 1em;
+  color: #404040;
+  margin-bottom: 1em; }
+
+/* line 9, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_breadcrumb */
+.breadcrumb {
+  padding: 20px 1em;
+  font-size: 14px;
+  color: #666; }
+
+/* line 15, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_breadcrumb */
+.breadcrumb a {
+  color: #666;
+  text-decoration: underline; }
+
+/* line 20, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_breadcrumb */
+.breadcrumb a:hover {
+  color: #0074d9; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_media */
+figcaption {
+  color: #666; }
+
+/* line 9, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_media */
+.aspect-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative; }
+
+/* line 14, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_media */
+.aspect-ratio--object {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+
+/* line 24, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_media */
+.featured-image figcaption {
+  padding: 4px 1em; }
+
+/* line 28, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules/_media */
+.image-credit {
+  float: right;
+  padding: 0.5em 0.6em;
+  text-align: right;
+  text-transform: uppercase;
+  color: #999;
+  font-size: 0.8em; }
+
+/* line 5, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/modules */
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* Text meant only for screen readers */
+/* line 6, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/a11y */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden; }
+  /* line 15, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/a11y */
+  .screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+    background-color: #f2f2f0;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #222;
+    display: block;
+    font-size: 1.4px;
+    font-size: 0.0875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar */ }
+
+@media only screen and (min-width: 48em) {
+  /* ============
+    WIDE: Main
+   ============ */
+  /* line 13, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+  body {
+    background-color: #f2f2f0; }
+
+  /* line 16, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+  .main section {
+    padding-left: 1em;
+    padding-right: 1em; }
+
+  /* line 21, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+  .main section h1 {
+    padding-right: 2.5em; }
+
+  /* line 24, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+  .main article {
+    float: left;
+    padding-left: 1em;
+    width: 57%; }
+
+  /* line 29, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+  .main aside {
+    float: right;
+    width: 28%; }
+ }
+
+@media only screen and (min-width: 71.25em) {
+  /* ===============
+    Maximal Width
+   =============== */
+  /* line 40, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+  .wrapper {
+    max-width: 1200px;
+    /* 1140px - 10% for margins */
+    margin: 0 auto; }
+ }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/* line 50, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px; }
+
+/* line 57, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%; }
+
+/* line 64, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/* line 69, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* line 81, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* line 90, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.invisible {
+  visibility: hidden; }
+
+/* line 95, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table; }
+
+/* line 100, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.clearfix:after {
+  clear: both; }
+
+/* line 104, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/mq */
+.clearfix {
+  *zoom: 1; }
+
+/* 
+
+Please avoid making any changes directly to base.css as these will be overwritten by the Sass.
+
+Please put any additional CSS into this file which is executed after every other Sass file (so should override the cascade where relevant). 
+
+Putting styles in this file also mean they can be refactored into the Sass at a later date. 
+
+*/
+/* line 11, /Users/simson/Dropbox/GitHub/tenn-edu-starter/sass/scratch */
+.ie7 .title {
+  padding-top: 20px; }
+
+/*# sourceMappingURL=styles.css.map */

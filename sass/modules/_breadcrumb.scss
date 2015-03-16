@@ -1,0 +1,22 @@
+//
+// BREADCRUMB NAV
+//
+
+.main article {
+    
+}
+
+.breadcrumb {
+    padding: 20px 1em;
+    font-size: 14px;
+    color: #666; 
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: underline;
+}
+
+.breadcrumb a:hover {
+    color: $link-hover;
+}

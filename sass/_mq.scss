@@ -1,0 +1,106 @@
+//
+// MEDIA QUERIES
+//
+
+
+@media only screen and (min-width: 48em) {
+
+
+/* ============
+    WIDE: Main
+   ============ */
+
+    body {
+        background-color: $pearl;}
+    
+    .main section {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .main section h1 {
+        padding-right: 2.5em;
+    }
+    .main article {
+        float: left;
+        padding-left: 1em;
+        width: 57%;}
+
+    .main aside {
+        float: right;
+        width: 28%;}
+}
+
+@media only screen and (min-width: 71.25em) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        max-width: 1200px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

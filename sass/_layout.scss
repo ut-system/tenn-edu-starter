@@ -1,0 +1,14 @@
+// Basic layout styles which are used throughout the site
+
+body {
+	min-width: 260px; /* stops the pages getting ridiculously narrow */
+	overflow-x: hidden;
+	width: 100%;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0% 5%;    
+}
+
+@import "layout/_header", "layout/_footer", "layout/_main", "layout/_sidebar";

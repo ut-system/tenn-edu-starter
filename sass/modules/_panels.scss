@@ -1,0 +1,27 @@
+//
+// PANELS
+//
+
+.panel {
+    border: 1px solid #ccc;
+    background-color: $pearl;
+    padding: .7em 1em;
+    color: $text;
+    margin-bottom: 1em;
+}
+
+.panel-dark{
+    border: 1px solid #000;
+    background-color: $charcoal;
+    padding: .7em 1em;
+    color: white;
+    margin-bottom: 1em;
+}
+
+.panel-white {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: .7em 1em;
+    color: $charcoal;
+    margin-bottom: 1em;
+}

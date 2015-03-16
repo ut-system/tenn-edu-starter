@@ -1,0 +1,38 @@
+//
+// MEDIA
+//
+
+figcaption {
+    color: #666;
+}
+
+.aspect-ratio {
+  height: 0;
+  padding-top: 56.25%;
+  position: relative; }
+
+.aspect-ratio--object {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+
+.featured-image figcaption{
+    padding: 4px 1em;
+}
+
+.image-credit {
+    float: right;
+    padding: .5em .6em;
+    text-align: right;
+    text-transform: uppercase;
+    color: #999;
+    font-size: .8em;
+}
+
+.featured-video {
+}

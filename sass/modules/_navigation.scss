@@ -1,0 +1,57 @@
+//
+// NAVIGATION
+//
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.global-navigation ul {
+    margin: 0;
+    padding: 0;
+}
+
+.global-navigation a {
+    display: block;
+    margin-bottom: 1px;
+    padding: 11px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: black;
+    background-color: $pearl;
+}
+
+.global-navigation a:hover,
+.global-navigation a:visited {
+    color: black;
+}
+
+.global-navigation a:hover {
+    text-decoration: underline;
+}
+
+
+
+// related stories
+
+.related li {
+    margin-left: 0;
+	list-style: none;
+    padding-bottom: .5em;
+    margin-bottom: .75em;
+    border-bottom: 2px dotted #ccc;
+}
+
+.related-src {
+    margin-top: .2em;
+    display: block;
+    text-transform: uppercase;
+    color: #999;
+    font-size: .8em;
+}

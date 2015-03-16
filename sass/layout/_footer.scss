@@ -1,0 +1,34 @@
+//
+// FOOTER
+//
+
+.footer-container,
+{
+    border-top: 4px solid $orange;
+    border-bottom: 1px solid #000;
+}
+
+.footer-container,
+ {
+    background: $charcoal;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 20px 0;
+}
+
+.global-footer {
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 0;
+    background: #000;
+    color: #f2f2f0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.global-footer a {
+    color: #ccc;
+    text-decoration: underline;
+}
