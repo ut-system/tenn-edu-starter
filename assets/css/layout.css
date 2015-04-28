@@ -1,0 +1,169 @@
+/*--A11Y controls--*/
+
+.is-vishidden {
+    position: absolute !important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    padding: 0px;
+    border: 0px none;
+    clip: rect(1px, 1px, 1px, 1px);}
+
+.wrap { 
+    margin: 0 auto; 
+    overflow: hidden;
+    max-width: 1200px; 
+}
+
+.primary { 
+    float: left; 
+    width: 62.5%;
+    border: 1px #ccc dashed;
+}
+
+.secondary { 
+    float: right; 
+    width: 37.5%;
+    border: 1px #ccc dashed;
+}
+
+ul.related li:before, ul.related li:after {
+    display: table;
+	content: " ";    
+}
+
+ul.related li {
+    padding: 1em 0;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+
+ul.related li:last-child {
+    border-bottom: none;
+}
+
+ul.related li:after {
+    clear: both;
+}
+
+
+
+.header { 
+    background: #fff; 
+    padding: 3.75em 1.25em 1.25em 1.25em; 
+}
+
+.header p { 
+    font-size: 23px; 
+    font-weight: 300; color: #FFF; 
+    line-height: 130%; 
+    margin-right: 40%; 
+    letter-spacing: -1px; 
+}
+
+.content { 
+    padding: 40px 10px; 
+}
+
+.column_lining { 
+    padding: 0 1.25em; 
+}
+
+.footer { 
+    background: #222;
+    color: #555;
+    padding: 3.75em 1.25em; 
+    background: #EEE; 
+}
+
+
+.footer p { 
+    font-size: 0.8125em; 
+    font-weight: 300; 
+    color: #999; 
+    line-height: 130%; 
+    margin: 0; 
+}
+
+.footer a:link, .footer a:visited { 
+    color: #999; 
+    text-decoration: none; 
+}
+
+.footer a:hover, .footer a:active { 
+    color: #777; 
+    text-decoration: none; 
+}
+
+.footer ul, .footer ol {
+    margin-top: 0.325em;
+}
+
+.footer-container {
+     padding: 0 1.25em;
+    border: 1px #ccc dashed;
+}
+
+.footer-container ul li{
+    list-style: none;
+}
+
+@media screen and ( min-width: 25em ) {
+
+}
+
+@media screen and ( min-width: 50em ) {
+
+    .primary {width: 62.5%;}
+    .secondary {width: 37.5%;}
+    
+    .contacts{width: 37.5%; float: right;}
+    
+    .global-links li {letter-spacing: 0.09em; text-transform: uppercase;}
+    .navigation ul{display: block;}
+    .navigation ul li {display: inline-block; margin-right: 40px;}
+}
+
+
+@media screen and ( min-width: 62.5em ) {
+
+    .primary {width: 70%;}
+    .secondary, .contacts {width: 30%;}
+    
+    .global-links li {font-size: .75em;}
+}
+
+
+@media screen and ( min-width: 75em ) {
+
+    .primary {width: 66.667%;}
+    .secondary, .contacts {width: 33.333%;}
+}
+
+
+
+@media screen and ( max-width: 400px ) {
+
+	.header { padding: 3.75em 1em 1.25em 1em; }
+	.column_lining { padding: 0 0.375em; }
+	
+	p, li, table, pre { font-size: 14px; }
+	.header p { margin-right: 0%; }
+
+}
+
+
+@media screen and ( max-width: 799px ) {
+	
+    .primary, .secondary { float: none; width: auto !important; }
+    
+    
+	.header { padding: 3.75em 1.25em 1.25em 1.25em; }
+	.content { padding: 2.5em 0.625em; }
+	.column_lining { padding: 0 0.625em; }
+}
+
+@media screen and ( min-width: 400px ) and ( max-width: 799px ) {
+    .content-block img { width: 48%; float: right; margin-left: 0.625em;}
+
+}

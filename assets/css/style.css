@@ -1,0 +1,264 @@
+* { 
+    margin: 0; 
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{ 
+    font-size: 100.00%; 
+}
+
+body{
+	font-size: 93.75%;
+	color: #333;
+	line-height: 1.5em;
+    position: relative; 
+    background: #FFF;
+   }
+
+h1 {
+    font-size: 2em;
+    line-height: 1.125em;
+    margin-bottom: 0.335em;
+}
+
+h2 {
+    font-size: 1.625em;
+    line-height: 1.15384615em;
+        margin-bottom: 0.415em;
+}
+
+h3 {
+    font-size: 1.375em;
+    line-height: 1.13636364em;
+    margin-bottom: 0.5em;
+}
+
+
+h4 {
+    font-size: 1.125em;
+    line-height: 1.11111111em;
+}
+
+h5, h6 {
+    font-size: 1em; 
+}
+
+h6 {
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul li {
+    list-style: disc;
+}
+
+figure img, img {
+    width: 100%;
+    height: auto;
+    display:block;
+}
+
+
+figcaption{
+    font-size: small;
+    font-style:italic;
+    color:#666;
+}
+
+img { 
+    border: none; 
+}
+
+a { 
+    color: #0074D9;
+    outline: none; 
+}
+
+ a:hover img {
+    opacity: 0.8;
+}
+
+/*--- Elements ---*/
+
+.primary-logo a{
+    color: #111;
+    text-decoration: none;
+}
+
+.icon {
+    float: left;
+    width: 60px;
+    height: 34px;
+}
+
+.global-links {
+    width: 100%;
+    background: #F2F2F0;
+    min-height: 25px;
+    border-bottom: 4px #F77F00 solid;
+}
+
+.global-links li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.global-links li a:hover {
+    text-decoration: underline;
+}
+
+
+.article menu, .article ol, .article ul {
+    padding: 0 0 0 20px;
+}
+
+.tags {
+    border-top: 1px solid #ccc;
+}
+
+.tags h6 {
+    padding-top: .8em;
+}
+
+.navigation ul {
+    margin-left: 20px;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a{
+    text-decoration: none;
+}
+
+.navigation li a:hover {
+    text-decoration: underline;
+}
+
+/*--- Forms ---*/
+
+form {
+  margin-bottom: 1.5em; }
+
+
+form ul {
+  list-style-type: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0; }
+  
+  form ul li {
+    *zoom: 1;
+    margin-bottom: 1.5em; }
+
+    form ul li:before, form ul li:after {
+      content: "";
+      display: table; }
+
+    form ul li:after {
+      clear: both; }
+
+
+fieldset {
+  margin: 0;
+  padding: 1.5em; }
+
+label {
+  display: block; }
+
+label.inline {
+  display: inline;
+  padding-right: 24px; }
+
+input:focus, textarea:focus, select:focus {
+  outline: 0px;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }
+
+input[type="text"], input[type="url"], input[type="email"], input[type="password"], input[type="search"], input[type="number"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="tel"], textarea {
+  display: block;
+  width: 100%;
+  margin: 0 0 0.75em;
+  padding: 0.3em;
+  border: 1px solid #ccc;
+  line-height: 1.5em;
+}
+
+select {
+  width: 100%;
+  height: 2.1em;
+  margin-bottom: 0.9em;
+  border: 1px solid #ccc;
+ }
+
+
+input[type="range"], input[type="color"] {
+  vertical-align: middle;
+  height: 1.5em;
+  width: 100%;
+}
+
+input[type="range"] {
+  height: 1.4em; }
+
+
+input[type="color"] {
+  width: 1.5em;
+}
+
+input[type="time"] {
+  margin: 0 0 0.55em; }
+
+
+input[type="submit"], input[type="button"] {
+  border: 1px solid #ccc;
+  background: #ddd;
+  padding: 0.7em 2em;
+  margin: 0 20px 0 0;
+  line-height: 1.5em;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+
+.button { 
+    display: block; 
+    font-size: 16px; 
+    font-weight: 300; 
+    padding: 14px 18px; 
+    border-radius: 3px; 
+    margin-bottom: 22px; 
+}
+
+.button:link, .button:visited { 
+    color: #FFF; 
+    text-decoration: none; 
+    background: #222; 
+}
+
+.button:hover, .button:active { 
+    color: #FFF; 
+    text-decoration: none; 
+    background: #333; 
+}
+
+.image-credit {
+font-size: 11px;
+    color:#aaa;
+    text-transform: uppercase;
+}
+
+a.content-block {
+    color: #333;
+    text-decoration: none;
+}
+
+a.content-block:hover {
+    color: #666;
+}
